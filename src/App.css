@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body {
+  margin: auto;
+  padding: auto;
+  background-image: url("https://static.onecms.io/wp-content/uploads/sites/28/2021/02/19/new-york-city-evening-NYCTG0221.jpg");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.card {
+  background: #b993d6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #8ca6db,
+    #b993d6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #8ca6db,
+    #b993d6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin-top: 100px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  max-width: 600px;
+  min-height: auto;
+  color: #000;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+  box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
 }
 
-.App-link {
-  color: #61dafb;
+.learn-more {
+  text-decoration: none;
+  color: #000;
+  margin-top: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.learn-more:hover {
+  text-decoration: none;
+  color: blue;
+  margin-top: 8px;
+}
+
+.my {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.your {
+  font-family: "Zilla Slab Highlight", cursive;
 }
